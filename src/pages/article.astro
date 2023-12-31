@@ -3,6 +3,7 @@ import Footer from '../components/Footer.astro';
 import ShareButton from '../components/ShareButton.astro';
 import BackButton from '../components/BackButton.astro';
 import ExampleP from '../components/ExampleP.astro';
+import ArticleSidebar from '../components/ArticleSidebar.astro';
 ---
 
 <!doctype html>
@@ -12,14 +13,7 @@ import ExampleP from '../components/ExampleP.astro';
         <main class="flex relative mx-auto overflow-hidden pt-32 pb-72 max-w-2xl min-h-screen">
             <div style="transform: translate(-280px, 121px);" class="fixed top-0 px-10">
                 <BackButton/> 
-                <ul class="flex flex-col gap-3 mt-20">
-                    <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Aesthetic Foundation</a>
-                    <a href="#SecP" class="opacity-55 hover:opacity-100 delay-75 text-sm">Grid System</a>
-                    <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Hero Composition</a>
-                    <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Visual Rhythm</a>
-                    <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Pixelated Iconography</a>
-                    <a href="#LastP" class="opacity-55 hover:opacity-100 delay-75 text-sm">Accessible Code Blocks</a>
-                </ul>   
+                <ArticleSidebar/> 
             </div>
             <div class="h-full w-full">
                 <div class="flex justify-between">
