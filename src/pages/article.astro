@@ -1,5 +1,8 @@
 ---
 import Footer from '../components/Footer.astro';
+import ShareButton from '../components/ShareButton.astro';
+import BackButton from '../components/BackButton.astro';
+import ExampleP from '../components/ExampleP.astro';
 ---
 
 <!doctype html>
@@ -8,23 +11,10 @@ import Footer from '../components/Footer.astro';
         <div class="bg-gradient-to-t from-transparent to-neutral-900 p-4 h-28 w-full fixed top-0 z-10"></div>
         <main class="flex relative mx-auto overflow-hidden pt-32 pb-72 max-w-2xl min-h-screen">
             <div style="transform: translate(-280px, 121px);" class="fixed top-0 px-10">
-                <a href="/" class="flex opacity-55 hover:opacity-100 mt-3 ">
-                    <svg class=""
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                        d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
-                        fill="currentColor"
-                    />
-                    </svg><div href="#" class="px-2 delay-75 text-sm">Back</div>
-                </a>
+                <BackButton/> 
                 <ul class="flex flex-col gap-3 mt-20">
                     <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Aesthetic Foundation</a>
-                    <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Grid System</a>
+                    <a href="#SecP" class="opacity-55 hover:opacity-100 delay-75 text-sm">Grid System</a>
                     <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Hero Composition</a>
                     <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Visual Rhythm</a>
                     <a href="#" class="opacity-55 hover:opacity-100 delay-75 text-sm">Pixelated Iconography</a>
@@ -37,82 +27,13 @@ import Footer from '../components/Footer.astro';
                         <div class="mb-2 font-bold">Article 1</div>
                         <div class="mb-10 font-extralight text-sm opacity-80">December 2023</div>
                     </div>
-                    <button class="mr-2 ring-1 ring-neutral-600 h-10 px-2 mt-2 rounded-full hover:bg-neutral-800"><svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M14.8284 12L16.2426 13.4142L19.071 10.5858C20.6331 9.02365 20.6331 6.49099 19.071 4.9289C17.509 3.3668 14.9763 3.3668 13.4142 4.9289L10.5858 7.75732L12 9.17154L14.8284 6.34311C15.6095 5.56206 16.8758 5.56206 17.6568 6.34311C18.4379 7.12416 18.4379 8.39049 17.6568 9.17154L14.8284 12Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M12 14.8285L13.4142 16.2427L10.5858 19.0711C9.02372 20.6332 6.49106 20.6332 4.92896 19.0711C3.36686 17.509 3.36686 14.9764 4.92896 13.4143L7.75739 10.5858L9.1716 12L6.34317 14.8285C5.56212 15.6095 5.56212 16.8758 6.34317 17.6569C7.12422 18.4379 8.39055 18.4379 9.1716 17.6569L12 14.8285Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M14.8285 10.5857C15.219 10.1952 15.219 9.56199 14.8285 9.17147C14.4379 8.78094 13.8048 8.78094 13.4142 9.17147L9.1716 13.4141C8.78107 13.8046 8.78107 14.4378 9.1716 14.8283C9.56212 15.2188 10.1953 15.2188 10.5858 14.8283L14.8285 10.5857Z"
-                          fill="currentColor"
-                        />
-                      </svg></button>
+                    <ShareButton/> 
                 </div>
                 <img src="https://images.unsplash.com/photo-1682685797366-715d29e33f9d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-lg shadow-lg mb-6">
-                <p class="font-light py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam maxime earum quas, officiis deserunt excepturi est maiores laudantium eaque placeat numquam voluptates ut! Pariatur molestiae deserunt ipsam quaerat culpa!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente praesentium dolorem cupiditate qui? Nesciunt officiis impedit, dicta tempore facere nisi alias, voluptatem quas excepturi distinctio, ut blanditiis eius veritatis!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ullam molestiae corrupti excepturi quaerat consectetur dolores maxime totam sit ad aliquid, illum alias eligendi. Commodi omnis labore explicabo magni quisquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum quas dignissimos molestias. Voluptate, dolore. Debitis, nostrum quas dolor voluptatem fugit, temporibus cupiditate, voluptates esse ducimus repellat repellendus. Alias, voluptate!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo saepe culpa. Quibusdam, esse? Quidem error similique accusantium, nihil, ab aut nam voluptas quae qui eligendi animi maiores delectus consectetur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit accusantium, quia eveniet autem earum harum facilis totam. Maiores alias delectus corrupti aut nemo quae consequuntur quod ipsam accusantium tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque nisi rem beatae, quidem ut obcaecati necessitatibus totam, alias sint ex nulla quam modi dolores repellendus. Velit corrupti quia mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores possimus modi aspernatur officiis porro facilis tempora voluptate ipsa dicta, quae blanditiis ratione molestiae sint facere delectus magni accusantium exercitationem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium neque sequi reiciendis animi recusandae, explicabo veritatis dignissimos doloremque quae, odit et, voluptate ratione dicta quisquam obcaecati! Asperiores eveniet numquam vitae.
-
-                </p>
-                
-                <p  class="font-light py-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente praesentium dolorem cupiditate qui? Nesciunt officiis impedit, dicta tempore facere nisi alias, voluptatem quas excepturi distinctio, ut blanditiis eius veritatis!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ullam molestiae corrupti excepturi quaerat consectetur dolores maxime totam sit ad aliquid, illum alias eligendi. Commodi omnis labore explicabo magni quisquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum quas dignissimos molestias. Voluptate, dolore. Debitis, nostrum quas dolor voluptatem fugit, temporibus cupiditate, voluptates esse ducimus repellat repellendus. Alias, voluptate!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo saepe culpa. Quibusdam, esse? Quidem error similique accusantium, nihil, ab aut nam voluptas quae qui eligendi animi maiores delectus consectetur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit accusantium, quia eveniet autem earum harum facilis totam. Maiores alias delectus corrupti aut nemo quae consequuntur quod ipsam accusantium tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque nisi rem beatae, quidem ut obcaecati necessitatibus totam, alias sint ex nulla quam modi dolores repellendus. Velit corrupti quia mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores possimus modi aspernatur officiis porro facilis tempora voluptate ipsa dicta, quae blanditiis ratione molestiae sint facere delectus magni accusantium exercitationem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium neque sequi reiciendis animi recusandae, explicabo veritatis dignissimos doloremque quae, odit et, voluptate ratione dicta quisquam obcaecati! Asperiores eveniet numquam vitae.
-                </p>
-
-                <p  class="font-light py-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente praesentium dolorem cupiditate qui? Nesciunt officiis impedit, dicta tempore facere nisi alias, voluptatem quas excepturi distinctio, ut blanditiis eius veritatis!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ullam molestiae corrupti excepturi quaerat consectetur dolores maxime totam sit ad aliquid, illum alias eligendi. Commodi omnis labore explicabo magni quisquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum quas dignissimos molestias. Voluptate, dolore. Debitis, nostrum quas dolor voluptatem fugit, temporibus cupiditate, voluptates esse ducimus repellat repellendus. Alias, voluptate!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo saepe culpa. Quibusdam, esse? Quidem error similique accusantium, nihil, ab aut nam voluptas quae qui eligendi animi maiores delectus consectetur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit accusantium, quia eveniet autem earum harum facilis totam. Maiores alias delectus corrupti aut nemo quae consequuntur quod ipsam accusantium tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque nisi rem beatae, quidem ut obcaecati necessitatibus totam, alias sint ex nulla quam modi dolores repellendus. Velit corrupti quia mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores possimus modi aspernatur officiis porro facilis tempora voluptate ipsa dicta, quae blanditiis ratione molestiae sint facere delectus magni accusantium exercitationem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium neque sequi reiciendis animi recusandae, explicabo veritatis dignissimos doloremque quae, odit et, voluptate ratione dicta quisquam obcaecati! Asperiores eveniet numquam vitae.
-                </p>
-
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente praesentium dolorem cupiditate qui? Nesciunt officiis impedit, dicta tempore facere nisi alias, voluptatem quas excepturi distinctio, ut blanditiis eius veritatis!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ullam molestiae corrupti excepturi quaerat consectetur dolores maxime totam sit ad aliquid, illum alias eligendi. Commodi omnis labore explicabo magni quisquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum quas dignissimos molestias. Voluptate, dolore. Debitis, nostrum quas dolor voluptatem fugit, temporibus cupiditate, voluptates esse ducimus repellat repellendus. Alias, voluptate!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo saepe culpa. Quibusdam, esse? Quidem error similique accusantium, nihil, ab aut nam voluptas quae qui eligendi animi maiores delectus consectetur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit accusantium, quia eveniet autem earum harum facilis totam. Maiores alias delectus corrupti aut nemo quae consequuntur quod ipsam accusantium tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque nisi rem beatae, quidem ut obcaecati necessitatibus totam, alias sint ex nulla quam modi dolores repellendus. Velit corrupti quia mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores possimus modi aspernatur officiis porro facilis tempora voluptate ipsa dicta, quae blanditiis ratione molestiae sint facere delectus magni accusantium exercitationem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium neque sequi reiciendis animi recusandae, explicabo veritatis dignissimos doloremque quae, odit et, voluptate ratione dicta quisquam obcaecati! Asperiores eveniet numquam vitae.
-                <p  class="font-light py-4" id="LastP">
-
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente praesentium dolorem cupiditate qui? Nesciunt officiis impedit, dicta tempore facere nisi alias, voluptatem quas excepturi distinctio, ut blanditiis eius veritatis!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ullam molestiae corrupti excepturi quaerat consectetur dolores maxime totam sit ad aliquid, illum alias eligendi. Commodi omnis labore explicabo magni quisquam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum quas dignissimos molestias. Voluptate, dolore. Debitis, nostrum quas dolor voluptatem fugit, temporibus cupiditate, voluptates esse ducimus repellat repellendus. Alias, voluptate!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo saepe culpa. Quibusdam, esse? Quidem error similique accusantium, nihil, ab aut nam voluptas quae qui eligendi animi maiores delectus consectetur?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum impedit accusantium, quia eveniet autem earum harum facilis totam. Maiores alias delectus corrupti aut nemo quae consequuntur quod ipsam accusantium tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque nisi rem beatae, quidem ut obcaecati necessitatibus totam, alias sint ex nulla quam modi dolores repellendus. Velit corrupti quia mollitia.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores possimus modi aspernatur officiis porro facilis tempora voluptate ipsa dicta, quae blanditiis ratione molestiae sint facere delectus magni accusantium exercitationem.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium neque sequi reiciendis animi recusandae, explicabo veritatis dignissimos doloremque quae, odit et, voluptate ratione dicta quisquam obcaecati! Asperiores eveniet numquam vitae.
-
-                </p>            
+                <ExampleP/> 
+                <ExampleP/>     
+                <ExampleP/> 
+                <ExampleP/>  
             </div>
         </main>
     </body>
