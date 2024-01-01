@@ -1,17 +1,17 @@
 ---
-import Homepage from '../layouts/Homepage.astro';
+import HomeLayout from '../layouts/HomeLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 ---
 
-<Homepage>
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-	<ArticleCard/> 
-</Homepage>
+
+<HomeLayout title="My Blog">
+	<body>
+		<div class="flex gap-2 px-3 pt-4">
+			<ArticleCard/>
+			<ArticleCard/>
+			<ArticleCard/>
+		</div>
+	</body>	
+</HomeLayout> 
+
 
