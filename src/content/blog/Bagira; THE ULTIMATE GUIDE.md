@@ -5,7 +5,7 @@ date: 2022-07-08
 image: '/blog-placeholder-3.jpg'
 tags: ["blog", "astro"]
 ---
-## Introduction 
+# **Introduction**
 This is a guide to make a home server running Linux with docker containers. Instead of being  just a step by step, I would love this to be a guide for people to **understand** what's the purpose of a home server and the components that it houses. 
 
 **Requirements**: 
@@ -32,6 +32,7 @@ Running:
 - **How does my server work?**: Your server is hooked up to power and ethernet in your house. It runs linux and different apps inside docker containers. You can access any app from anywhere in the world and manage your files. It's a Google Drive, Netflix and 1Password combined, but much better and safer. This is just an example, you can run your apps bare metal, in Virtual Machines or however you like to. That's the beauty, you make it however nice you want.  
 - **What do I need?**: Start with what you have, an old computer with a hard drive should be fine. Then scale it for your needs. Buying second hand parts is always appreciated from the enviroment. Try finding parts with low power comsuption. 
 
+                                              
 ## Operating System
 You could use Windows if you are really not comfortable with Linux. But Linux is far more secure in the long run, faster and it supports far more hardware than Windows does, especially older hardware. In this guide I'm using Fedora 38 Server. I would divide this 3 categories for newcomers in terms of using your server: 
 - Begginner: Use Windows 10/11 with apps running bare metal

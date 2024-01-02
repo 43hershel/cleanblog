@@ -30,7 +30,9 @@ const { frontmatter } = Astro.props;
                     <ShareButton/> 
                 </div>
                 <img src={frontmatter.image} alt="" class="rounded-lg shadow-lg mb-6">
-                    <slot class="" />
+                <article>
+                    <slot />
+                </article>   
                 </div>
             </div>
         </main>

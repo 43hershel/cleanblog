@@ -11,7 +11,8 @@ const { title, description, date, image } = blog.data;
     <div class="absolute flex px-5 bottom-4 justify-between w-full">
         <a href={`/blog/${blog.slug}`} class="font-light hover:underline underline-offset-4">{title}</a>
         <time class="font-extralight opacity-80" datetime={date.toISOString()}>{date.toLocaleDateString(undefined, {
-            dateStyle: "medium",
+            year: "numeric",
+            month: "long",
             timeZone: "CET",
         })}</time>
     </div>
