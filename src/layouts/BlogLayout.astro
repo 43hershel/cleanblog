@@ -7,7 +7,7 @@ import ShareButton from "../components/ShareButton.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<html lang="es">
+<html lang="es" class="dark">
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -77,8 +77,6 @@ const { frontmatter } = Astro.props;
     .prose ul {
         color: white;
     }
-
-
     .prose a {
         color: white;
     }
@@ -93,6 +91,23 @@ const { frontmatter } = Astro.props;
 
     .prose pre {
         color: grey;
+    }
+
+    .astro-code {
+        color: orange;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0.75em;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: #262626;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: #525252;
+        border-radius: 10vh;
     }
 
 </style>
