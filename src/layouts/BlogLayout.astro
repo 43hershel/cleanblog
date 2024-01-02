@@ -7,7 +7,6 @@ import ShareButton from "../components/ShareButton.astro";
 const { frontmatter } = Astro.props;
 ---
 
-
 <html lang="es">
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -30,12 +29,70 @@ const { frontmatter } = Astro.props;
                     <ShareButton/> 
                 </div>
                 <img src={frontmatter.image} alt="" class="rounded-lg shadow-lg mb-6">
-                <article>
-                    <slot />
-                </article>   
-                </div>
+                <main class="prose">
+                    <slot />  
+                </main> 
             </div>
         </main>
     </body>	
     <Footer/>
 </html>
+
+
+<style is:global>
+    .prose p + p{
+        margin-bottom: 15px;
+        color: white;
+
+    }
+    .prose h1 {
+        color: grey;
+    }
+
+    .prose h2 {
+        color: grey;
+    }
+    
+    .prose h3 {
+        color: grey;
+    }
+    .prose h4 {
+        color: grey;
+    }
+    .prose h5 {
+        color: grey;
+    }
+
+    .prose p {
+        color: white;
+    }
+    .prose strong {
+        color: white;
+    }
+
+    .prose ol {
+        color: white;
+    }
+
+    .prose ul {
+        color: white;
+    }
+
+
+    .prose a {
+        color: white;
+    }
+
+    .prose img {
+        border-radius: 0.5rem;
+    }
+
+    .prose code {
+        color: grey;
+    }
+
+    .prose pre {
+        color: grey;
+    }
+
+</style>
