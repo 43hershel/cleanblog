@@ -3,6 +3,8 @@ import Footer from "../components/Footer.astro";
 import BackButton from "../components/BackButton.astro";
 import ArticleSidebar from "../components/ArticleSidebar.astro";
 import ShareButton from "../components/ShareButton.astro";
+
+const { frontmatter } = Astro.props;
 ---
 
 
@@ -22,13 +24,13 @@ import ShareButton from "../components/ShareButton.astro";
             <div class="h-full w-full">
                 <div class="flex justify-between">
                     <div>
-                        <div class="mb-2 font-bold">Article 1</div>
-                        <div class="mb-10 font-extralight text-sm opacity-80">December 2023</div>
+                        <div class="mb-2 font-bold">{frontmatter.title}</div>
+                        <div class="mb-10 font-extralight text-sm opacity-80">{frontmatter.date}</div>
                     </div>
                     <ShareButton/> 
                 </div>
-                <img src="https://images.unsplash.com/photo-1682685797366-715d29e33f9d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-lg shadow-lg mb-6">
-                    <slot />
+                <img src={frontmatter.image} alt="" class="rounded-lg shadow-lg mb-6">
+                    <slot class="" />
                 </div>
             </div>
         </main>
