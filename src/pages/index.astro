@@ -9,7 +9,7 @@ const allPosts = await getCollection("blog");
 
 <HomeLayout title="My Blog">
 	<body>
-		<div class="flex flex-wrap px-6 gap-2 pt-4">
+		<div class="flex flex-wrap px-6 gap-3 pt-4">
 			{allPosts.map((p) => <ArticleCard blog={p}/>)}
 		</div>
 	</body>	
