@@ -1,0 +1,19 @@
+---
+import { getEntry } from 'astro:content';
+
+const { params } = Astro;
+const currentSlug = params.slug;
+console.log(`${currentSlug}`);
+
+const entry = await getEntry('blog', currentSlug);
+const { headings } = await entry.render();
+
+---
+
+<div class="flex flex-col gap-3 mt-10 max-w-40">
+  {headings.map((heading) => (
+    <a class="opacity-55 hover:opacity-100" href={`#${heading.slug}`}> 
+      {heading.text}
+    </a>
+  ))}
+</div>

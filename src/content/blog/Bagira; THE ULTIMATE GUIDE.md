@@ -5,7 +5,10 @@ date: 2022-07-08
 image: '/blog-placeholder-3.jpg'
 tags: ["blog", "astro"]
 ---
-# **Introduction**
+
+## Table of contents
+
+# **Introduction** [](#Introduction)
 This is a guide to make a home server running Linux with docker containers. Instead of being  just a step by step, I would love this to be a guide for people to **understand** what's the purpose of a home server and the components that it houses. 
 
 **Requirements**: 
@@ -266,7 +269,7 @@ Backing up docker containers
 - Ansible
 Ansible is a automation tool written in Python. Learning it, could be a useful tool to automate updates and installation of your server. It functions by modules, playbooks and config files. 
 
-### Possible issues: 
+### Possible issues
 Plex container: 
 port 32400 not openned 
 - If you are unable to access the web UI, there could be a few reasons for this:
