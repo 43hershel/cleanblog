@@ -1,10 +1,8 @@
 ---
 import { getEntry } from 'astro:content';
-
 const { params } = Astro;
 const currentSlug = params.slug;
 console.log(`${currentSlug}`);
-
 const entry = await getEntry('blog', currentSlug);
 const { headings } = await entry.render();
 
