@@ -6,9 +6,7 @@ image: '/blog-placeholder-3.jpg'
 tags: ["blog", "astro"]
 ---
 
-## Table of contents
-
-# **Introduction** [](#Introduction)
+## **Introduction** [](#Introduction)
 This is a guide to make a home server running Linux with docker containers. Instead of being  just a step by step, I would love this to be a guide for people to **understand** what's the purpose of a home server and the components that it houses. 
 
 **Requirements**: 
@@ -281,10 +279,10 @@ If port 32400 is not listed as allowed, you can open it using the following comm
 
     sudo firewall-cmd --add-port=32400/tcp --permanent sudo firewall-cmd --reload
 
-### Extra Recursos
+## Extra Recursos
 https://github.com/TechSquidTV/UltimateHomeServer 
 
-## Upgrading the server to new versions of Fedora
+## Upgrading Fedora versions 
 
 To upgrade the server to newer versions of Fedora without making an installation media from scratch, just use the following commands:
 
