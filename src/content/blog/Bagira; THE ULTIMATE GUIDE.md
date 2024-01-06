@@ -42,8 +42,8 @@ You could use Windows if you are really not comfortable with Linux. But Linux is
 
 ## Drives
 I have 2 separate drives. 
-- main SSD: 256GB Kingston
-- hard drive: 1TB Seagate 7200rpm
+1. main SSD: 256GB Kingston
+2. hard drive: 1TB Seagate 7200rpm
 
 **WARNING!** Make sure you mount your drive to `/mnt` directory and change the drive permissions to read and write. If they are not, neither Plex nor qbittorrent would be able to access them. 
 
